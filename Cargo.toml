@@ -6,3 +6,10 @@ edition = "2024"
 [dependencies]
 hound="3.5.1"
 rand="0.9.2"
+[[bin]]
+name = "mlg"
+path = "src/main.rs"
+[package.metadata.deb]
+maintainer = "Anthrasil <anthrasil@gmail.com>"
+extended-description = "A MeLodie Generation application"
+depends = "libc6 (>= 2.31)"
